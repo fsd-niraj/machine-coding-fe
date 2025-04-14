@@ -1,0 +1,7 @@
+import OtpInput from './otp-input/OtpInput';
+import Progressbar from './progressbar/Progressbar';
+
+export default {
+  OtpInput,
+  Progressbar,
+};

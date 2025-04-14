@@ -1,12 +1,9 @@
-import Progressbar from "./problems/progressbar/Progressbar"
+import OtpInput from "./problems/otp-input/OtpInput";
 
 const App = () => {
-  const pgb = [5, 25, 30, 45, 50, 60, 75, 90];
   return (
     <>
-      {pgb.map((p, i) =>
-        <Progressbar progress={p} key={i} />
-      )}
+      <OtpInput />
     </>
   )
 }

@@ -40,7 +40,9 @@ const OtpInput = ({
           key={i}
           value={input[i]}
           onChange={(e) => handleInput(e.target.value, i)}
-          ref={(input) => inputRef.current[i] = input}
+          ref={(input) => {
+            if (input) inputRef.current[i] = input
+          }}
           onKeyDown={(e) => onDelete(e.key, input[i], i)}
         />
       )}

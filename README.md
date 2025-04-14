@@ -12,4 +12,4 @@ The local server should be up and running on `http://localhost:5137`.
 This repo is focused on Frontend Machine Coding interview problems.
 I am working on it daily to add new problems.
 
-You can find the all the problems in this [folder](https://github.com/fsd-niraj/machine-coding-fe/src/problems).
+You can find the all the problems in this [folder](https://github.com/fsd-niraj/machine-coding-fe/tree/main/src/problems/).

@@ -1,0 +1,22 @@
+.progress-bar{
+  width: 100%;
+  border: 1px solid #000;
+  height: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bar .progress{
+  /* height: 100%; */
+  animation: progress .5s linear;
+  transition: all ease-in-out;
+}
+
+.progress-bar .progress .progress-percentage{
+  font-size: 12px;
+  text-align: right;
+  padding-right: 4px;
+}
+@keyframes progress {
+  0%{transform: translateX(-100%);}
+}

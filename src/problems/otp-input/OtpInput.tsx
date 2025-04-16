@@ -11,6 +11,7 @@ const OtpInput = ({
   const OTP_INNPUT_LENGTH = length || 5;
   const [input, setInput] = useState(new Array(OTP_INNPUT_LENGTH).fill(""));
   const inputRef = useRef<any>([]);
+  const [otp, setOtp] = useState("")
 
   useEffect(() => {
     inputRef.current[0]?.focus()
@@ -23,6 +24,9 @@ const OtpInput = ({
     copyArr[i] = trimmedValue.slice(-1)
     setInput(copyArr)
     trimmedValue && inputRef.current[i + 1]?.focus()
+    if (i === input.length - 1) {
+      setOtp(copyArr.join(""))
+    }
   }
 
   const onDelete = (keyPressed: string, value: number, index: number) => {
@@ -46,6 +50,7 @@ const OtpInput = ({
           onKeyDown={(e) => onDelete(e.key, input[i], i)}
         />
       )}
+      {otp && <p>otp: {otp}</p>}
     </>
   )
 }
